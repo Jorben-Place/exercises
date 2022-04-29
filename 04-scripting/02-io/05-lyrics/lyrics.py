@@ -1,8 +1,21 @@
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
+import urllib.request
 import sys
-import urllib.request		
+import re
+import json
 
-my_request = urllib.request.urlopen("https://api.lyrics.ovh/v1/"sys.argv[1]"/"sys.argv[2])
+def to_url(string):
+    '''
+    URLs cannot contain spaces. Replaces each space by %20.
+    '''
+    return re.sub(' ', '%20', string)
 
-my_HTML = my_request.read().decode("utf8")
+artist, title = sys.argv[1:]
+title = to_url(title)
+artist = to_url(artist)
 
-print(my_HTML)
+url = f"https://api.lyrics.ovh/v1/{artist}/{title}"
+with urllib.request.urlopen(url) as input:
+    data = json.loads(input.read())
+    print(data['lyrics'])

@@ -1,0 +1,12 @@
+***once your python solution has run, you can revert to the original test file with CTRL-Z if it's opened e.g. in Code***
+
+aloha
+boeja en deez
+
+en ook deez nog
+
+
+a
+bb
+ccc
+dddd eeee 
