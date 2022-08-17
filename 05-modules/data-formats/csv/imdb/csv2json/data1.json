@@ -1,0 +1,37 @@
+{
+    "Hadrosaurus": {
+        "NAME": "Hadrosaurus",
+        "LEG_LENGTH": "1.4",
+        "DIET": "herbivore"
+    },
+    "Struthiomimus": {
+        "NAME": "Struthiomimus",
+        "LEG_LENGTH": "0.72",
+        "DIET": "omnivore"
+    },
+    "Velociraptor": {
+        "NAME": "Velociraptor",
+        "LEG_LENGTH": "1.8",
+        "DIET": "carnivore"
+    },
+    "Triceratops": {
+        "NAME": "Triceratops",
+        "LEG_LENGTH": "0.47",
+        "DIET": "herbivore"
+    },
+    "Euoplocephalus": {
+        "NAME": "Euoplocephalus",
+        "LEG_LENGTH": "2.6",
+        "DIET": "herbivore"
+    },
+    "Stegosaurus": {
+        "NAME": "Stegosaurus",
+        "LEG_LENGTH": "1.50",
+        "DIET": "herbivore"
+    },
+    "Tyrannosaurus Rex": {
+        "NAME": "Tyrannosaurus Rex",
+        "LEG_LENGTH": "6.5",
+        "DIET": "carnivore"
+    }
+}
